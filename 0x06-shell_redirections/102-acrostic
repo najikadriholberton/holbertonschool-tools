@@ -1,7 +1,2 @@
 #!/bin/bash
-result=""
-while read line; do
-	first="$(echo $line | head -c 1)"
-	result="${result}${first}"
-done
-echo $result
+cut -c1 | paste -s -d ""
